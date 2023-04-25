@@ -11,8 +11,9 @@ async function SubmitTask(){
             new_time: time, 
             new_title: title
         });
-        window.location.href = "/home_page.html";
-        
+        if(response.status === 200){
+            window.location.href = "/home_page.html";
+        }
     } catch (error) {
         if(error.response.status === 401){
             window.location.href = "/login.html";

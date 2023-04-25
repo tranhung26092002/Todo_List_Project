@@ -31,13 +31,13 @@ function showListTask(response){
                                 type="text" 
                                 class="time" 
                                 value='${task.time}'
-                                "What time?" >
+                                "What time?" readonly>
                             <input 
                             id="title"
                                 type="text" 
                                 class="title" 
                                 value='${task.title}'
-                                "What do you have planned?" >
+                                "What do you have planned?" readonly>
                         </div>
                         <div class="actions">
                             <button 
