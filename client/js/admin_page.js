@@ -33,7 +33,7 @@ function showListUser(response){
         htmlUser +=`<tr>
                         <td>${index+1}</td>
                         <td>${user.username}</td>
-                        <td>${user. role}</td>
+                        <td>${user.role}</td>
                         <td>${user.email}</td>
                         <td>
                             <button

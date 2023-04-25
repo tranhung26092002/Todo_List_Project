@@ -14,7 +14,7 @@ const register = async (req, res) => {
         username: username,
         email: email,
         password: bcrypt.hashSync(password,10),
-        role: 'regular'
+        role: 'customer'
         });
         return res.status(200).send('register user');
     }

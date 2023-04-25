@@ -12,10 +12,10 @@ async function handleLogin(){
         //decode lay ra thong tin payload
         const payloadDecoded = jwt_decode(accessToken);
 
-        if(payloadDecoded.role === 'admin'){
-            window.location.href = '/admin_page.html';     
+        if(payloadDecoded.role === 'customer'){
+            window.location.href = '/home_page.html';     
         }else{
-            window.location.href = '/home_page.html';
+            window.location.href = '/admin_page.html';
         }
         // save accesstoken to client
         localStorage.setItem('access_token', accessToken);

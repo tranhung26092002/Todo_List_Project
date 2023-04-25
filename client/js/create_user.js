@@ -1,5 +1,4 @@
 async function handleSubmitAddUser(){
-    //1. get data 
     try {
         // lay thong tin 
         const username = document.getElementById('new_username').value;
@@ -19,7 +18,4 @@ async function handleSubmitAddUser(){
     } catch (error) {
         console.log('error');
     }
-
-
-    //2. call api to server
 }

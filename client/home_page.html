@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Thời gian biểu trong ngày</title>
+	<title>Time Table on Day</title>
 
-	<link rel="stylesheet" href="/css/home_page.css" />
+	<link rel="stylesheet" href="css/home_page.css" />
 </head>
 <body>
 	
@@ -23,29 +23,27 @@
 	</div>
 
 	<header>
-		<h1>Task List on Day</h1>
+		<h1>Time Table on Day</h1>
 		<form id="new-task-form">
 			<input 
 				type="text" 
-				name="new-time-input" 
-				id="new-time-input" 
+				id="new_time" 
 				placeholder="What time?    'hh:mm'" />
 			<input 
-				type="text" 
-				name="new-task-input" 
-				id="new-task-input" 
+				type="text"  
+				id="new_title" 
 				placeholder="What do you have planned?" />
-			<input 
-				type="submit"
-				id="new-task-submit" 
-				value="Add task" />
+			<button 
+				onclick="handleCreateTask()"
+				id="new_task_submit"
+				type="button" >Submit</button>
 		</form>
 	</header>
 	<main>
 		<section class="task-list">
-			<h2>Tasks</h2>
+			<h2>List Task</h2>
 
-			<div id="tasks">
+			<div class="tasks">
 
 				<!-- <div class="task">
 					<div class="content">
@@ -74,7 +72,6 @@
     <script src="js/jwt-decode.js"></script>
     <script src="js/common.js"></script>
     <script src="js/home_page.js"></script>
-	<script src="js/main.js"></script>
 
 </body>
 </html>
